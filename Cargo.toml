@@ -23,6 +23,8 @@ default = ["use-bindgen"]
 # instead using of pre-generated bindings.rs.
 use-bindgen = ["dep:bindgen"]
 
+[build]
+rustflags = ["-L", "/opt/homebrew/opt/libde265/lib", "-l", "de265"]
 
 [build-dependencies]
 bindgen = { version = "0.69", optional = true }

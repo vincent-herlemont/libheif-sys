@@ -32,12 +32,6 @@ fn main() {
         // brew --prefix aom + lib
         println!("cargo:rustc-link-search=native=/opt/homebrew/opt/aom/lib");
 
-
-        // Import from openjpeg
-        println!("cargo:rustc-link-lib=dylib=openjp2");
-        // brew --prefix openjpeg + lib
-        println!("cargo:rustc-link-search=native=/opt/homebrew/opt/openjpeg/lib/");
-
         // Import from brew /opt/homebrew/opt/libtool
         // println!("cargo:rustc-link-lib=dylib=ltdl");
         // brew --prefix libtool + lib
